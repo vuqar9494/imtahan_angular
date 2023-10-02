@@ -1,0 +1,89 @@
+<div class="content">
+    <div class="mt-4">
+        <div style="display: flex; justify-content: space-between;">
+        <p class="sw-title">Şagirdlər </p>
+        <button   [routerLink]="['/new-stud']" [queryParams]="{id:0}" style="margin-top: 30px;" class="sw-btn red-ripple">+ Əlavə et</button>      
+        </div>
+    <div class="card-section mb-5">   
+        <div style="display: flex; flex-wrap: wrap!important; justify-content: start;width: 90%;">        
+            
+            <div class="block-section mt-2">
+                <label class="btm-7">Şagird</label>
+                <input style="padding: 3px 0;" [(ngModel)]="name" type ="text" class="sw-input"/>
+            </div>
+
+ 
+             <div style="width: 70px!important" class="block-section mt-2">
+                 <label class="btm-7">Sinif</label>
+                 <mat-select style="width: 70px!important"  [(ngModel)]="clas" class="sw-input">
+                    <mat-option  value="">
+                        seçin
+                      </mat-option>
+                     <mat-option *ngFor="let ddl of class" value="{{ddl}}">
+                       {{ddl}}
+                     </mat-option>
+                   </mat-select>
+             </div>
+          
+          
+         
+        
+      
+         </div>
+      <button (click)="filter()" class="sw-btn blue blue-ripple b-position mt-3">Filtirlə</button>
+    </div>
+        <div class="table-container mt-4 mb-5">
+            <table class="main-table table-responsive ellipsis">
+                <tr class="head">
+                    <th>Ad</th>
+                    <th >Soyadı</th>
+                    <th>Sinif</th>
+                   
+                    <th style="width: 60px;"></th>
+                    
+                </tr>
+                <ng-container *ngFor="let crs of courseList" >
+                    <tr class="border" >
+                        <td class="ellipsis" >{{crs.name}}</td>
+                       
+                        <td>{{crs.surname}}</td>
+                        <td >{{crs.class}}</td>
+                        
+                        <td style="width: 65px;">
+                            <ng-container >
+                                <button mat-icon-button [matMenuTriggerFor]="fileMenu" style="padding-bottom: 25px; border:none;background-color: white;">
+                                    <mat-icon style="margin-top: 15px;">more_vert</mat-icon>
+                                </button>
+                                <mat-menu #fileMenu="matMenu">
+                                  <mat-divider></mat-divider>
+                                  <button [routerLink]="['/new-stud']" [queryParams]="{id:crs.id}" mat-menu-item><mat-icon style="color:deepskyblue; margin-right: 5px; margin-bottom: 7px;">edit</mat-icon><span class="menu-span">Düzəlt</span></button>
+                                  <mat-divider></mat-divider>
+                                  <button (click)="deleteCourse(crs.id)" mat-menu-item><mat-icon style="color: red; margin-right: 5px; margin-bottom: 7px;">delete</mat-icon><span class="menu-span">Sil</span></button>
+                                </mat-menu> 
+                            </ng-container>
+                       
+                          
+                            
+                        </td>
+                    </tr>
+                </ng-container>
+                <ng-container *ngIf="!courseList||courseList.length == 0" >
+                    <tr>
+                        <td colspan="5">No Data</td>
+                    </tr>
+                </ng-container>
+            </table>
+        </div>
+        
+        <div class="paginator-mat">
+            <mat-paginator [pageSizeOptions]="[8, 16, 24]" [pageSize]="pageSize" [length]="total" showFirstLastButtons (page)="pageChanged($event)">
+            </mat-paginator>
+        </div>
+        
+    </div>
+    <div class="spin" *ngIf="spinner">
+        <div class="mat-spinner" >
+        <mat-spinner ></mat-spinner> 
+      </div>
+    </div>
+</div>

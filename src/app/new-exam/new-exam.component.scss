@@ -1,0 +1,84 @@
+.mt{
+    margin-top: 15px;
+  }
+
+.btm-7{
+  margin-bottom: 7px;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.form-c{
+  overflow: unset;
+}
+.sw-input{
+  max-width: 100%;
+}
+::ng-deep .selected-item[_ngcontent-serverApp-c223] {
+  border: 1px solid #337ab7;
+  margin-right: 4px;
+  background: #337ab7;
+  padding: 0 5px;
+  color: #fff;
+  border-radius: 2px;
+ 
+  min-width: 150px;
+
+  margin-bottom: 4px;
+}
+
+:ng-deep a[_ngcontent-serverApp-c223] {
+  float:right!important;}
+mat-select{
+  width: 250px;
+}
+.block-section{
+  margin:  15px;
+}
+.sw-btn{
+  height: auto;
+  min-height: 40px;
+}
+//  ::ng-deep span .dropdown-btn {
+//   display: inline-block;
+//   border: 2px solid #EEEEEE!important;
+//   max-width: 100%!important;
+//   padding: 0 12px 0 6px!important;
+//   margin-bottom: 0;
+//   font-weight: 400;
+//   line-height: 1.52857143;
+//   text-align: left;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   background-image: none;
+//   border-radius: 4px;
+// }
+
+p {
+  font-family: Lato;
+}
+
+.mat-filter-input {
+  width: calc(100% - 25px) !important;
+}
+
+.mat-filter::after {
+  content: "\e8b6";
+  font-family: material icons;
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.mat-option.hide {
+  display: none;
+}
+
+.mat-datepicker-toggle {
+  pointer-events: auto;
+  position: absolute;
+  margin-top: -12px;
+  margin-left:-35px!important;
+}
