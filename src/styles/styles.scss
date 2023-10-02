@@ -44,7 +44,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.42857143 !important;
     background: #f8f8f8 !important;
 }
@@ -82,7 +82,7 @@ section {
     color: $main-heading !important;
     font-size: 50px;
     font-weight: 100;
-    font-family: "BebasNeue", Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 
@@ -143,11 +143,11 @@ section {
 .cabinet-title {
     font-weight: bold;
     color: $main-heading;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .cabinet-sub-title {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 fieldset.scheduler-border {
@@ -228,7 +228,7 @@ p[_ngcontent-lgc-c10].text-left {
 .mat-radio-button,
 .mat-option {
     // font-family: 'esahsFontFamily';
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ::ng-deep .mat-paginator-page-size-label {

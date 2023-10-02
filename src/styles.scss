@@ -53,7 +53,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     margin: 0;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
     line-height: 1.42857143 !important;
     background: white !important;
 padding: 0;
@@ -73,7 +73,7 @@ padding: 0;
       cursor: pointer;
       background-image: none;
       border-radius: 4px;
-      font-family: Arial, Helvetica, sans-serif !important;
+      
       color: #78797a !important;
       font-weight: 400 !important;
       padding-left: 7px !important;
@@ -106,7 +106,7 @@ input{
 }
 
 textarea{
-    font-family: Arial, Helvetica, sans-serif;
+   
     color: #78797a;
     font-weight: 400;
     padding-left: 7px;
@@ -150,41 +150,53 @@ textarea{
 .mb-5{
     margin-bottom: 50px;
 }
-
+.table-container{border-radius:  5px  5px 0 0 !important;}
 table{
     width: 100%;
     //table-layout: fixed;
     overflow-x: auto;
-    border-radius:  15px  15px 0 0 !important;
+    border: none;
+    border-spacing: 0!important;
+    border-radius:  5px  5px 0 0 !important;
 }
 .main-table {
+    box-sizing: border-box;
+    border-radius:  5px  5px 0 0 !important;
     box-shadow: 0 2px 2px -1px rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
     overflow: hidden; 
-    
+    padding: 0!important;
     .head{
+       
     background-color: #0756A5;
     height: 55px;
     color: #ffff;
-    font-family: Arial, Helvetica, sans-serif;
+   
     font-style: normal;
-    font-size: 18px;
+    font-size: 2vw;
     font-weight: 800;
+    padding: 0!important;
     }
 
     tr {
-      height: 55px;
+      height: 45px;
+      padding: 0!important;
     }
 
     th,
     td {
     width: 260px;
-    padding: 5px;
+    padding: 0!important;
     text-align: center;
+    font-size: 1.5vw;;
+    height: 75px!important;
     }
+    td {
+       border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+        }
   }
 
   .sw-title{
-    font-family: Arial, Helvetica, sans-serif;
+
     text-shadow: 0px 3px 4px #b4b6b8;
     //margin-left: 25px;
     margin-top: 30px;
@@ -220,17 +232,18 @@ p[_ngcontent-lgc-c10].text-left {
 
 //------------------------- buttons ----------------------------
 .sw-btn{
-    font-family: Arial, Helvetica, sans-serif;
+ 
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    background-color: #EE1D23;
+    background-color: #0756A5;
     color: #FFFFFF;
     height: 40px;
     width: 170px;
-    border-radius: 13px;
+    border-radius: 5px;
     border: none;
     box-shadow: 1px 3px 3px #999999;
+   
 }
 
 .b-position{
@@ -250,7 +263,7 @@ p[_ngcontent-lgc-c10].text-left {
     transition: background 0.8s;
   }
   .blue-ripple:hover {
-    background: #0756A5 radial-gradient(circle, transparent 1%, #3073b6 1%) center/15000%;
+    background: #3073b6 radial-gradient(circle, transparent 1%, #3073b6 1%) center/15000%;
   }
   .blue-ripple:active {
     background-color: #3073b6;
@@ -282,14 +295,14 @@ p[_ngcontent-lgc-c10].text-left {
 }
 
 label{
-    font-family: Arial, Helvetica, sans-serif;
+  
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
 }
 
 input[type=text]{
-    font-family: Arial, Helvetica, sans-serif;
+  
     color: #78797a;
     font-weight: 400;
     padding-left: 7px;
@@ -303,6 +316,7 @@ box-shadow: 0 0 0 1px #d3d3d3;
 border-radius: 6px;
 padding: 3px;
 width: 210px!important;
+margin-bottom: 10px!important;
 }
 
 .is-invalid {
@@ -318,7 +332,7 @@ width: 210px!important;
 }
 
 .danger-font{
-font-family: Arial, Helvetica, sans-serif;
+
 font-size: 14px !important;
 font-weight: 400;
 }
@@ -342,7 +356,7 @@ font-weight: 400;
 .mat-radio-button,
 .mat-option {
     // font-family: 'esahsFontFamily';
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .custom-file-upload {
@@ -433,7 +447,78 @@ select::-ms-expand {
         height: 100%;
     }
 }
+@media screen and (max-width: 600px) {
+    .main-table {
+        box-sizing: border-box;
+        border-radius:  5px  5px 0 0 !important;
+        box-shadow: 0 2px 2px -1px rgb(0 0 0 / 20%), 0 2px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+        overflow: hidden; 
+        padding: 0!important;
+        .head{
+           
+        background-color: #0756A5;
+        height: 55px;
+        color: #ffff;
+       
+        font-style: normal;
+        font-size: 2.5vw;
+        font-weight: 800;
+        padding: 0!important;
+        }
+    
+        tr {
+          height: 35px!important;
+          padding: 0!important;
+        }
+    
+        th,
+        td {
+        width: 260px;
+        padding: 0!important;
+        text-align: center;
+        font-size: 2vw;;
+        height: 40px!important;
+       
+        }
+        td {
+           border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+           height: 35px!important;
+            }
+      }
+    .sw-title {
+        text-shadow: 0px 3px 4px #b4b6b8;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 49px;
+        color: #333333;
+    }
+    .sw-input {
+        margin-bottom: 4px;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0 0 0 1px #d3d3d3;
+        border-radius: 6px;
+        padding: 3px;
+        width: 150px !important;
+    }
 
+    .sw-btn{
+        margin-top: 30px!important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        background-color: #0756A5;
+        color: #FFFFFF;
+        height: 30px;
+        width: 110px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 1px 3px 3px #999999;
+    }
+  }
 .mat-dialog-content{
     margin: 0 !important;
     padding: 0!important;

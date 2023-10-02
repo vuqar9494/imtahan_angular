@@ -35,7 +35,7 @@ export class HeaderComponent {
 
      myFunction() {
       var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
+      if (!(x.className.includes(" responsive"))) {
         x.className += " responsive";
       } else {
         x.className = "topnav";

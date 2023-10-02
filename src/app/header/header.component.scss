@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-between;
     background-color: white;
+ 
 }
+.header{   transition:all 1s;}
 .img{
     margin-left: 30px;
     width: 50px;
@@ -34,12 +36,13 @@ a{
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+   
   }
   
   .topnav {
     overflow: hidden;
-    
+    padding-right: 100px;
+
   }
   
   .topnav a {
@@ -50,7 +53,9 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;   
   }
 
   .topnav a:hover {
@@ -72,15 +77,24 @@ body {
     .topnav a.icon {
       float: right;
       display: block;
-     
+      position: absolute;
+      right: 10px;
+      top: 10px;
     }
+     
+  .topnav {
+    transition:all 0.3s;
+   
+  }
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;   transition:all 1s;}
+    .topnav.responsive {position: relative;  }
     .topnav.responsive .icon {
+      float: none;
+      display: block;
       position: absolute;
-      right: 0;
+      right: 0px;
       top: 0px;
     }
     .topnav.responsive a {
@@ -92,6 +106,6 @@ body {
     }
     .topnav.responsive  {
        padding-top: 40px;
-       transition:all 1s;
+     
       }
   }

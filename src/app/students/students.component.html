@@ -2,7 +2,7 @@
     <div class="mt-4">
         <div style="display: flex; justify-content: space-between;">
         <p class="sw-title">Şagirdlər </p>
-        <button   [routerLink]="['/new-stud']" [queryParams]="{id:0}" style="margin-top: 30px;" class="sw-btn red-ripple">+ Əlavə et</button>      
+        <button   [routerLink]="['/new-stud']" [queryParams]="{id:0}" style="margin-top: 30px;" class="sw-btn blue-ripple">+ Əlavə et</button>      
         </div>
     <div class="card-section mb-5">   
         <div style="display: flex; flex-wrap: wrap!important; justify-content: start;width: 90%;">        
@@ -13,9 +13,9 @@
             </div>
 
  
-             <div style="width: 70px!important" class="block-section mt-2">
+             <div  class="block-section mt-2">
                  <label class="btm-7">Sinif</label>
-                 <mat-select style="width: 70px!important"  [(ngModel)]="clas" class="sw-input">
+                 <mat-select   [(ngModel)]="clas" class="sw-input">
                     <mat-option  value="">
                         seçin
                       </mat-option>
@@ -51,8 +51,8 @@
                         
                         <td style="width: 65px;">
                             <ng-container >
-                                <button mat-icon-button [matMenuTriggerFor]="fileMenu" style="padding-bottom: 25px; border:none;background-color: white;">
-                                    <mat-icon style="margin-top: 15px;">more_vert</mat-icon>
+                                <button mat-icon-button [matMenuTriggerFor]="fileMenu" style=" border:none;background-color: white;">
+                                    <mat-icon >more_vert</mat-icon>
                                 </button>
                                 <mat-menu #fileMenu="matMenu">
                                   <mat-divider></mat-divider>
