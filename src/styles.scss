@@ -189,8 +189,10 @@ table{
     text-align: center;
     font-size: 1.5vw;;
     height: 75px!important;
+  
     }
     td {
+        color: rgba($color: #000000, $alpha: .7);
        border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
         }
   }

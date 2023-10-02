@@ -38,7 +38,7 @@
             
             <div class="block-section mt-2">
                   <label class="btm-7">Şagird</label>
-                  <input style="padding: 7px 0;"  [(ngModel)]="name" type ="text" class="sw-input"/>
+                  <input placeholder=" Ad Soyad" style="padding: 7px 0;"  [(ngModel)]="name" type ="text" class="sw-input"/>
               </div>
   
           
@@ -93,7 +93,7 @@
                                       <mat-icon >more_vert</mat-icon>
                                   </button>
                                   <mat-menu #fileMenu="matMenu">
-                                    <mat-divider></mat-divider>
+                                 
                                     <button [routerLink]="['/new-exam']" [queryParams]="{id:crs.examId}"   mat-menu-item><mat-icon style="color:deepskyblue; margin-right: 5px; margin-bottom: 7px;">edit</mat-icon><span class="menu-span">Düzəlt</span></button>
                                     <mat-divider></mat-divider>
                                     <button (click)="deleteCourse(crs.examId)" mat-menu-item><mat-icon style="color: red; margin-right: 5px; margin-bottom: 7px;">delete</mat-icon><span class="menu-span">Sil</span></button>
