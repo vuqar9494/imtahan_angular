@@ -131,11 +131,17 @@ console.log(this.less.filter(x=>x.id==e).map(x=>{return x.class})[0],this.option
       this.router.navigate(['']);
     }
 
+
     onSubmit() {
       
+      if ((this.newExam.get('point').value >5 || this.newExam.get('point').value<2)) {
+        this.newExam.get('point').setValue(5) 
+        
+       
+      }
       this.submitted = true; 
       console.log(this.newExam);
-      
+    
       if (this.newExam.valid) {
    
         this.createStudent()

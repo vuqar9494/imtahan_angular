@@ -62,7 +62,7 @@
                           <label class="btm-7">Qiymət</label>
                           <div style=" height:32px;position: relative;" class="sw-input"  
                           [ngClass]="{ 'is-invalid': (newExam.controls['point'].touched || submitted) && newExam.controls['point'].errors}">
-                          <input type=text formControlName="point"    style="border:none; width:200px;"/>
+                          <input type="number" maxlength="1" formControlName="point"    style="border:none; width:200px;"/>
                         
                           </div>
                            <span class="text-danger danger-font"
