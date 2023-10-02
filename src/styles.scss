@@ -450,6 +450,12 @@ select::-ms-expand {
     }
 }
 @media screen and (max-width: 600px) {
+    .mat-datepicker-toggle {
+        pointer-events: auto;
+        position: absolute;
+        margin-top: -34px;
+        margin-left: 118px !important;
+    }
     .main-table {
         box-sizing: border-box;
         border-radius:  5px  5px 0 0 !important;
