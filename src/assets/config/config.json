@@ -1,0 +1,11 @@
+{
+   
+    "keys": {
+        "secretKey": "secret-key"
+    },
+  
+    "other": {
+        "resourceApiURI": "http://localhost:5800/api"
+    }
+  
+}

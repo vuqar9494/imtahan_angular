@@ -1,0 +1,24 @@
+
+.mat-tab-label-container .mat-tab-label-active {
+    background-color: $tab-color;
+    color: #fff !important;
+    transition: background-color 0.3s linear;
+    opacity: 0.6 !important;
+}
+
+.mat-tab-label-container .cdk-focused {
+    color: #fff !important;
+    opacity: 0.6 !important;
+}
+
+.mat-tab-label-container .cdk-mouse-focused {
+    color: #fff !important;
+    opacity: 0.6 !important;
+}
+.mat-tab-label {
+    border-radius: 4px;
+}
+mat-ink-bar{
+    visibility: hidden !important;
+}
+
