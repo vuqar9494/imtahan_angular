@@ -8,7 +8,7 @@ align-items: center;
 position: relative;
 }
 .img-main{
-    width: 50%;
+    width: 60%;
 }
 .headd{
     background-color: rgba($color: #4284db, $alpha: .6);
@@ -37,8 +37,10 @@ font-weight: bold;
     margin-left: -25px;
 }
 
-@media screen and (max-width: 700px) {
-    .content {margin-top: 50px;}
-    
+@media screen and (max-width: 900px) {
+    .content {margin-top: 20px;}
+    .img-main{
+        width: 110%;
+    }
     }
   
