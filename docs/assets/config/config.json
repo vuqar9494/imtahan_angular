@@ -5,7 +5,7 @@
     },
   
     "other": {
-        "resourceApiURI": "http://localhost:5800/api"
+        "resourceApiURI": "https://apiimtahan.azurewebsites.net/api"
     }
   
 }
