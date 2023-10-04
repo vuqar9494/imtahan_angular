@@ -115,12 +115,14 @@ export class LessonsComponent {
   }
   
   deleteCourse(id){
-    this.spinner=true;
+  
     const dialogRef = this.dialog.open(ConfirmDeleteDialogComponent, {restoreFocus: false});
     dialogRef.afterClosed().subscribe(dialogResult => { 
     if(dialogResult){
+      this.spinner=true;
       this.service.deleteLesson(id).subscribe(
         res=>{
+          
           this.notify.showSuccess(res.status.message,"")
           this.getNextData(this.paginator.pageIndex+1, this.pageSize.toString());
           this.spinner=false;
